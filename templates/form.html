@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Page de Connexion{% endblock%}
+
+
+
+
+
+
+{% block content %}
+<link type="text/css" rel="stylesheet" href="static/css/style_connexion.css">
+
+<div class="container">
+    <div class="row" style="justify-content: center;">
+        <div class="col-lg-4">
+            <div class="login-form">
+                <form action="/predict" method="post">                    <h2 class="text-center">Classification tweet</h2>
+                    <div class="form-group">
+                        <input type="text" name="tweet" class="form-control" placeholder="Tweet" required="required">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" value="Envoyer" class="btn btn-primary btn-block">Predire</button>
+                    </div>
+                    Résultat : {{ prediction_text }}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

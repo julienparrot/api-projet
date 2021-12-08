@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock%}</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand" href="/produit" style="display: inline-flex;">
+                <img src="/static/images/test2.jpg" class="d-inline-block align-top ml-5 mr-5" style="width: 100px;" alt="Logo-sneakers">
+                <h1 class="display-4 ml-3" style="font-family: system-ui;">API Projet</h1>
+            </a>
+            {% block navbar %}{% endblock%}
+        </nav>
+    </header>
+
+
+    {% block content %}
+
+    {% endblock%}
+
+
+
+   <footer class="bg-light">
+        <div class="container text-center">
+            <p></p>
+            <p></p>
+        </div>
+
+   </footer>
+
+</body>
+</html>
